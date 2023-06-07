@@ -1,16 +1,16 @@
+import Image from "next/image";
 import Link from "next/link";
 
-const Navabr = () => {
+const Navbar = () => {
     return ( 
-        <div>
-            <div className="logo">
-                <h1>Ninja List</h1>
-            </div>
-            <Link href='/'>Home</Link>&nbsp;
-            <Link href='/about'>About</Link>&nbsp;
+        <div className="nav">
+            <Image src="/arrow-fly.png" width="50" height="30" alt='logo' />
+            <div className="logo"></div>
+            <Link href='/'>Home</Link>&nbsp;&nbsp;
+            <Link href='/about'>About</Link>&nbsp;&nbsp;
             <Link href='/ninjas'>Ninja Listing</Link>
         </div>
      );
 }
  
-export default Navabr;
+export default Navbar;

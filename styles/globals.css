@@ -87,7 +87,7 @@ body {
 
 body {
   color: rgb(var(--foreground-rgb));
-  text-align:center;
+  background-color: gainsboro;
 }
 
 a {
@@ -95,8 +95,51 @@ a {
   text-decoration: none;
 }
 
+.p{
+  padding:0px 40px;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
 }
+
+.nav{
+  margin:10px auto 80px;
+  padding:20px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.nav a{
+  margin-left:12px;
+}
+
+.nav .logo{
+  margin-right:auto;
+}
+
+.footer{
+  display: block;
+  text-align: center;
+  padding:30px 0px;
+  margin-top:60px;
+  color:#777;
+  border-top: 1px solid #777;
+}
+
+.not-found{
+  text-align:center;
+  display:flex;
+  flex-direction: column;
+  gap:20px;
+}
+
+.not-found>h1{
+  font-size: 3rem;
+}
+
+
